@@ -4,6 +4,6 @@ author: B0
 date: '2023-09-15'
 ---
 
-# Hello VuePress?
+# DUMMYYYs
 
-# Hello VuePress!
+This is a dummy Blog.
