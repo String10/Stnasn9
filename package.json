@@ -8,7 +8,7 @@
     "docs:build": "vuepress build docs"
   },
   "author": "Strjneg",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@vuepress/plugin-blog": "^1.9.4",
     "@vuepress/theme-blog": "^2.3.3",

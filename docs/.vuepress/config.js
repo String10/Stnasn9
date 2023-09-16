@@ -21,7 +21,7 @@ module.exports = {
           link: 'https://policies.google.com/privacy?hl=en-US',
         },
         {
-          text: 'ISC Licensed | Copyright © 2023-present BoS',
+          text: 'MIT Licensed | Copyright © 2023-present BoS',
         },
       ],
     },
