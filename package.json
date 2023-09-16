@@ -10,7 +10,8 @@
   "author": "Strjneg",
   "license": "ISC",
   "devDependencies": {
-    "vuepress": "^1.9.10",
-    "vuepress-theme-reco": "^1.6.17"
+    "@vuepress/plugin-blog": "^1.9.4",
+    "@vuepress/theme-blog": "^2.3.3",
+    "vuepress": "^1.9.10"
   }
 }

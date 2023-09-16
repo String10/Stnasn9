@@ -1,34 +1,54 @@
 module.exports = {
   title: 'Stnasn9',
   description: 'Blog driven by VuePress',
-  theme: 'reco',
+  theme: '@vuepress/blog',
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
-      {
-        text: 'REfs',
-        items: [
-          { text: 'Github', link: 'https://github.com/String10' }
-        ]
-      }
+      { text: 'Posts', link: '/posts/' },
+      { text: 'Tags', link: '/tag/' },
     ],
-    sidebar: [
+    footer: {
+      contact: [
+        {
+          type: 'github',
+          link: 'https://github.com/String10',
+        },
+      ],
+      copyright: [
+        {
+          text: 'Privacy Policy',
+          link: 'https://policies.google.com/privacy?hl=en-US',
+        },
+        {
+          text: 'ISC Licensed | Copyright © 2023-present BoS',
+        },
+      ],
+    },
+  },
+  plugins: [
+    [
+      '@vuepress/blog',
       {
-        title: 'DUMMy',
-        path: '/',
-        collapsable: false,
-        children: [
-          { title: "FirstBlog", path: "/FIrstBlog" }
-        ]
-      },
-      {
-        title: "SecondBlog",
-        path: '/dummy/SecondBlog',
-        collapsable: false,
-        children: [
-          { title: "another", path: "/dummy/ThirrdBlog" },
+        directories: [
+          {
+            id: 'posts',
+            dirname: '_posts',
+            path: '/posts/',
+            itemPermalink: '/post/:slug',
+            pagination: {
+              lengthPerPage: 2,
+            },
+          },
         ],
-      }
-    ]
-  }
+        frontmatters: [
+          {
+            id: 'tag',
+            keys: ['tag', 'tags'],
+            path: '/tag/',
+          },
+        ],
+      },
+    ],
+  ],
 }
