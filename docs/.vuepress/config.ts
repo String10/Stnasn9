@@ -1,7 +1,9 @@
-module.exports = {
+import { defineUserConfig } from "@vuepress/cli";
+
+export default defineUserConfig({
   title: 'Stnasn9',
   description: 'Blog driven by VuePress',
-  base : '/Stnasn9/',
+  base: '/Stnasn9/',
   theme: '@vuepress/blog',
   themeConfig: {
     nav: [
@@ -52,4 +54,4 @@ module.exports = {
       },
     ],
   ],
-}
+});
